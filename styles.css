@@ -1,0 +1,541 @@
+.FundoWeb{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(Imagens/Fundo.png) no-repeat;
+    background-size:cover;
+    background-position:center;
+    align-items: center;
+}
+.FundoWebAbout{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(Imagens/Anime.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+    align-items: center;
+}
+.FundoWebProjects{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(Imagens/VacaAbdu.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+    align-items: center; 
+}
+.FundoWebServices{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    background-size:cover;
+    background-position:center;
+    align-items: center;   
+}
+.Rodape{
+    background-color: rgb(73, 71, 71);
+    justify-content: center;
+    background-size:cover;
+    background-position:center;
+    align-items: center; 
+    display: flex;
+    min-height: 20vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    transition: .6s;
+}
+.Nagigation .btnLogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Nagigation .btnLogin:hover{
+    background-color: #fff;
+    color: #162938;
+    transform: scale(1.05); 
+}
+header.rolagem{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+header.rolagem .btnLogin{
+    color: rgb(160, 248, 152); 
+    border: 2px solid rgb(160, 248, 152); 
+}
+
+header.rolagem a,header.rolagem h1{
+    color: rgb(160, 248, 152);
+    width: 50%;
+    position: relative;
+}
+.Title{
+    font-size: 40px;
+    color: white;
+    user-select: nome; 
+}
+.MyPort{
+    color: aqua;
+}
+.Nagigation a{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .2s;    
+}
+.Content{
+    bottom: -10px;
+    right: 25%;
+    position: relative;
+    width: 40%;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Mypicture{
+    right:  5%;
+    bottom: 11%;
+    position: absolute;
+    width: 40%;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Presentation{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+}
+.Name{
+    color: rgb(0, 255, 255);
+}
+.Bio{
+    top: 30%;
+    position: absolute;
+    left: 10px;
+    word-spacing: 10px;
+    line-height: 2; 
+    color: rgb(255, 255, 255);
+}
+.Fumante{
+    height: 30%;
+    bottom: 7%;
+    left: 8%;
+    position: absolute; 
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.programador{
+    height: 30%;
+    bottom: 7%;
+    right: 8%;
+    position: absolute; 
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.MyPictu{
+    position: relative;
+    animation: flutoon 1.5s ease-in-out infinite alternate;
+    border-radius: 50px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(253, 253, 253) 0px 0px 0px 3px;
+}
+.Mypicture h2{
+    position: absolute;
+    animation: TextFutoon 1.5s ease-in-out infinite alternate;
+    top: 20px;
+    color: rgb(248, 120, 120);
+}
+   
+.Conhecimentos{
+    max-width: 100%;
+    height: 96%;
+    width: 100%;
+    top: 103%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.OPhp{
+    top: 13%;
+    left: 1%;
+    height: 20%;
+    width: 48.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.OPhp img{
+    position: absolute;
+    height: 115%;
+    left: -10px;
+}
+.OPhp p{
+    color: white;
+    margin-left: 24%;
+    
+}
+.OSql{
+    top: 13%;
+    right: 1%;
+    height: 20%;
+    width: 48.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
+.OSql img{
+    position: absolute;
+    height: 92%;
+    left: 15px;
+}
+.OSql p{
+    color: white;
+    margin-left: 24%;    
+}
+.OJaScript{
+    top: 40%;
+    right: 1%;
+    height: 20%;
+    width: 48.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.OJaScript img{
+    position: absolute;
+    height: 100%;
+    left: -60px;    
+}
+.OJaScript p{
+    color: white;
+    margin-left: 24%;  
+}
+.OHtml{
+    top: 40%;
+    left: 1%;
+    height: 20%;
+    width: 48.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.OHtml img{
+    position: absolute;
+    height: 110%;
+    left: 0;   
+}
+.OHtml p{
+    color: white;
+    margin-left: 24%;  
+}  
+.OCss{
+    top: 70%;
+    left: 1%;
+    height: 20%;
+    width: 48.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.OCss img{
+    position: absolute;
+    height: 100%;
+    left: 0;     
+}
+.OCss p{
+    color: white;
+    margin-left: 24%;    
+}
+.ODelphi{
+    top: 70%;
+    right:1%;
+    height: 20%;
+    width: 48.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.ODelphi img{
+    position: absolute;
+    height: 99%;
+    left: 5px;      
+}
+.ODelphi p{
+    color: white;
+    margin-left: 24%;      
+}
+.MyServices{
+    height: 50%;
+    width: 30%; 
+    margin-bottom:40% ;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px #fff;
+    border: 2px solid #ffff;
+}
+.MyServices h1{
+    color: white;
+    bottom: -220%;
+    position: absolute;
+}
+.MyServices span{
+    color: rgb(0, 255, 0);
+}
+.CriarSites{
+    height: 40%;
+    width: 30%;
+    left: 40px;
+    background-color: rgb(2, 2, 2);
+    position: absolute;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+.CriarSites img{
+    height: 40%;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+    left: 0;
+    top: 0;
+}
+.CriarSites p{
+    position: relative;
+    bottom: -80px;
+    left: 15px;
+    color: white;
+}
+.CriarSites:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+    border: 2px solid #ffff;
+}
+.BackEndSite{
+    height: 40%;
+    width: 30%;
+    left: 35%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+.BackEndSite img{
+    height: 40%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    left: 0;
+    top: 0;  
+}
+
+.BackEndSite p{
+    position: relative;
+    top: 0px;
+    left: 18%;
+    color: white;
+}
+.BackEndSite:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+    border: 2px solid #ffff;
+}    
+.Dev{
+    height: 40%;
+    width: 30%;
+    right: 40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: .2s; 
+}
+.Dev img{
+    height: 40%;    
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    left: 0;
+    top: 0;   
+}
+.Dev p{
+    position: relative;
+    bottom: -40px;
+    left: 15px;
+    color: white;   
+}
+.Dev:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;  
+    border: 2px solid #ffff; 
+}
+.Rodape .Whats{
+    height: 5%;
+    bottom: -306%;
+    left: 20px;
+    position: absolute;
+    transition: .2s;
+}
+.Rodape .Numero{
+    color: white;
+    left: 80px;
+    bottom: -305%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: absolute;
+    transition: .2s;
+}
+.Rodape .instagram{
+    position: absolute;
+    height: 5%;
+    bottom: -312%;
+    left: 20px;
+    transition: .2s;
+}
+.Rodape .LinkIstagram{
+    color: white;
+    left: 80px;
+    bottom: -311%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: absolute; 
+    transition: .2s;   
+}
+.Rodape .LinkIstagram:hover{
+    transform: scale(1.05);
+    left: 85px;
+}
+.Rodape .Github{
+    position: absolute;
+    height: 5%;
+    bottom: -319%;
+    left: 20px;
+    transition: .2s;   
+}
+.Rodape .LinkGit{
+    color: white;
+    left: 80px;
+    bottom: -318%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: absolute; 
+    transition: .2s;   
+}
+.Rodape .LinkGit:hover{
+    transform: scale(1.05);
+    left: 85px;
+}
+@keyframes TextFutoon{
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 40px;
+    }
+}
+@keyframes flutoon{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}

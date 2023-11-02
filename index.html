@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Segund</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+    <header id = "header">
+        <h1 class="Title">Welcome to <span class="MyPort">my portfolio</span></h1>
+        <nav class="Nagigation">
+            <a href="#FundoWeb">Home</a>
+            <a href="#FundoWebAbout">About</a>
+            <a href="#FundoWebProjects">Projects</a>
+            <a href="#FundoWebServices">Services</a>
+            <button class="btnLogin" id="btnLogin">Login</button>
+        </nav>
+    </header>
+    <div class="FundoWeb" id="FundoWeb">
+        <div class="Content">
+            <h1 class="Presentation">Hello, my name is <span class="Name">Jose Thiago</span> <br> and I am a <span class="Name">FullStaks programmer</span></h1>
+            <p class="Bio">I am a passionate Full Stack developer in constant search for knowledge and excellence in my career. I have a solid understanding of web development, both front-end and back-end, and am committed to facing challenges and embracing technological evolution. I believe that continuous learning is the key to success in this ever-changing field.
+            </p>
+            <img class="Fumante" src="Imagens/PrecicaFumante.png" alt="">
+            <img class="programador" src="Imagens/PrecicaProgramador.png" alt="">
+        </div>
+        <div class="Mypicture">
+            <h2>This is my website and this is me</h2>
+            <div class="Image">
+                <img class="MyPictu" src="Imagens/MyPohop.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="FundoWebAbout" id="FundoWebAbout">
+        <div class="Conhecimentos">
+            <div class="OPhp">
+                <img src="Imagens/php.png" alt="">
+                <p>No campo do desenvolvimento back-end, domino PHP e uso o framework Laravel para criar aplicativos web robustos e escaláveis. Isso me permite desenvolver soluções seguras e eficazes para uma variedade de necessidades empresariais.</p>
+            </div>
+            <div class="OSql">
+                <img src="Imagens/sql.png" alt="">
+                <p>Ter um conhecimento sólido em SQL é crucial para gerenciar dados de maneira eficiente. Sou capaz de projetar, consultar e manter bancos de dados, garantindo a integridade e a disponibilidade dos dados.</p>
+            </div>
+            <div class="OJaScript">
+                <img src="Imagens/JavaScript_logo_PNG_(7).png" alt="">
+                <p>Atualmente, estou mergulhando no mundo do JavaScript. Esta linguagem é essencial para o desenvolvimento front-end e para criar interatividade em páginas da web. Estou empolgado em aprimorar minhas habilidades nesta área para oferecer <br>experiências ricas e dinâmicas aos usuários.</p>
+            </div>
+            <div class="OHtml">
+                <img src="Imagens/html.png" alt="">
+                <p>Tenho domínio sobre a linguagem HTML, que é a base da <br>construção de páginas da web. Posso criar estruturas bem organizadas e semânticas para tornar o conteúdo acessível e amigável para mecanismos de busca.</p>
+            </div>
+            <div class="OCss">
+                <img src="Imagens/css.png" alt="">
+                <p> Sou capaz de estilizar as páginas com CSS para criar um design atraente e responsivo. Minha experiência em CSS me permite adaptar o layout e a aparência das páginas para atender às necessidades de diferentes dispositivos e navegadores.</p>
+
+            </div>
+            <div class="ODelphi">
+                <img src="Imagens/delphi.png" alt="">
+                <p>Possuo habilidades sólidas em Delphi e posso criar aplicativos Windows ricos em recursos e altamente funcionais. Estou familiarizado com a criação de interfaces de usuário, <br>tratamento de eventos e programação de lógica de negócios.</p>
+            </div>
+        </div>  
+    </div>
+    <div class="FundoWebProjects" id="FundoWebProjects">
+
+    </div>
+    <div class="FundoWebServices" id="FundoWebServices">  
+        <div class="MyServices">
+            <h1>My <span>Services</span></h1>
+        </div>
+        <div class="CriarSites">
+            <img src="Imagens/coding.png" alt="">
+            <p>With my expertise in HTML and CSS, I have the ability <br>to create visually appealing websites. HTML lays the structural foundation, while CSS adds the touch <br>of style. I'm ready to turn creative concepts into beautiful, engaging websites.</p>
+        </div>
+        <div class="BackEndSite">
+            <img src="Imagens/database.png" alt="">
+            <p>With experience both <br>in front-end development, <br>using HTML and CSS to create <br>attractive interfaces, and in the <br>back-end, where I can design <br>logic and interaction with <br>databases, I am prepared to offer <br>complete and functional solutions <br>that meet the needs of projects, <br>ensuring the effectiveness <br>and safety of operations and <br>providing a solid experience for <br>users.</p>
+        </div>
+        <div class="Dev">
+            <img src="Imagens/setting.png" alt="">
+            <p>As a developer, I integrate my front-end and <br> back-end skills to create effective systems. With prior experience, I have developed secure systems that <br>meet customer needs and provide an excellent user experience.</p>
+        </div>
+    </div>
+    <footer class="Rodape">
+        <img class="Whats" src="Imagens/whatsapp.png" alt="">
+        <p class="Numero" >17991109058</p>
+
+        <img class="instagram" src="Imagens/instagram.png" alt="">
+        <a class="LinkIstagram" href="https://www.instagram.com/thiago_marques304/" 
+        target="_blank">https://www.instagram.com/thiago_marques304/</a>
+        
+        <img class="Github" src="Imagens/github.png">
+        <a class="LinkGit" href="https://github.com/ciafelina?tab=repositories" target="_blank">https://github.com/ciafelina?tab=repositories/</a>
+    </footer>
+    <script>
+        var Button = document.getElementById("btnLogin")
+        Button.addEventListener('click',function(){
+        window.location.href = "login.php"   
+        })
+    </script>
+
+    
+</body>
+</html>
