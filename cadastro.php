@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="stylesheet" href="Cadastros.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -13,7 +13,13 @@
     <div class="wrapper">
         <div class="Form-box-Register">
             <h2>Registration</h2>
-            <form action="InserirCadastro.php" method="post">
+            <?php if(isset($_GET['error'])) { ?>
+                <p class="erro">Any fields not filled in</p>
+            <?php }?>
+            <?php if(isset($_GET['Invalid'])) { ?>
+                <p class="erro">Email already registered</p>
+            <?php }?>
+            <form action="fazerCadastro.php" method="post">
             <div class="input-box">
                 <span class="icon"><ion-icon name="person"></ion-icon></span>
                 <input type="text" name="UserNameRegister" id="UserNameRegister">

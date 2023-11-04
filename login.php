@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="logount.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -14,7 +14,13 @@
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
         <div class="Form-box-login">
             <h2>Login</h2>
-            <form action="" method="post">
+            <?php if(isset($_GET['error'])) { ?>
+                <p class="erro">User or Passoword is requised</p>
+            <?php }?>
+            <?php if(isset($_GET['Invalid'])) { ?>
+                <p class="erro">password or email is wrong</p>
+            <?php }?>
+            <form action="FazendoLogin.php" method="post">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="email" name="Email" id="Email">
